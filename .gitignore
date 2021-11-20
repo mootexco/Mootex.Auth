@@ -1,7 +1,20 @@
+### Mootex.Auth ###
+
+Mootex.Auth.db
+Mootex.Auth.db-shm
+Mootex.Auth.db-wal
+
 ### Visual Studio ###
 
 # Visual Studio folder
 .vs/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
 
 # Build results
 [Dd]ebug/
