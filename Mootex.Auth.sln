@@ -16,6 +16,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mootex.Auth.Models", "src\Mootex.Auth.Models\Mootex.Auth.Models.csproj", "{6D5CA35A-7016-46B6-AA04-E9F11E8DF4B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mootex.Auth.Entities", "src\Mootex.Auth.Entities\Mootex.Auth.Entities.csproj", "{8F2348CC-79FC-45B4-BEC8-8A929F231729}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{04168192-6EE1-4C2D-B6F7-B6327EC2DA78}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mootex.Auth.Library", "src\Mootex.Auth.Library\Mootex.Auth.Library.csproj", "{76750BF6-B166-41AF-8EAB-93C21C04529F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mootex.Auth.Data.Test", "test\Mootex.Auth.Data.Test\Mootex.Auth.Data.Test.csproj", "{2D3ED5B0-A84D-4327-9B9A-A92BA7C93958}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,9 +44,28 @@ Global
 		{1F6A0FAA-5EDA-475D-A30E-46A3735CAF64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F6A0FAA-5EDA-475D-A30E-46A3735CAF64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F6A0FAA-5EDA-475D-A30E-46A3735CAF64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D5CA35A-7016-46B6-AA04-E9F11E8DF4B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D5CA35A-7016-46B6-AA04-E9F11E8DF4B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D5CA35A-7016-46B6-AA04-E9F11E8DF4B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D5CA35A-7016-46B6-AA04-E9F11E8DF4B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F2348CC-79FC-45B4-BEC8-8A929F231729}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F2348CC-79FC-45B4-BEC8-8A929F231729}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F2348CC-79FC-45B4-BEC8-8A929F231729}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F2348CC-79FC-45B4-BEC8-8A929F231729}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76750BF6-B166-41AF-8EAB-93C21C04529F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76750BF6-B166-41AF-8EAB-93C21C04529F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76750BF6-B166-41AF-8EAB-93C21C04529F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76750BF6-B166-41AF-8EAB-93C21C04529F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D3ED5B0-A84D-4327-9B9A-A92BA7C93958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D3ED5B0-A84D-4327-9B9A-A92BA7C93958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D3ED5B0-A84D-4327-9B9A-A92BA7C93958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D3ED5B0-A84D-4327-9B9A-A92BA7C93958}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2D3ED5B0-A84D-4327-9B9A-A92BA7C93958} = {04168192-6EE1-4C2D-B6F7-B6327EC2DA78}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {692B50AD-E7EA-4F5E-8C3C-D4CF1AE79E8E}

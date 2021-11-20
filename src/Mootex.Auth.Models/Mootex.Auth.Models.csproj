@@ -4,13 +4,14 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-	<GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Mootex.Auth.Entities\Mootex.Auth.Entities.csproj" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Mootex.Auth.Library\Mootex.Auth.Library.csproj" />
-    <ProjectReference Include="..\Mootex.Auth.Models\Mootex.Auth.Models.csproj" />
   </ItemGroup>
 
 </Project>

@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Mootex.Auth.Data\Mootex.Auth.Data.csproj" />
+    <ProjectReference Include="..\Mootex.Auth.UseCases\Mootex.Auth.UseCases.csproj" />
   </ItemGroup>
 
 </Project>
