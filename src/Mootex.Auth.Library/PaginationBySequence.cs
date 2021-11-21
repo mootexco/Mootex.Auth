@@ -2,11 +2,11 @@
 
 public sealed class PaginationBySequence
 {
-    public uint MinId { get; init; }
+    public ulong MinId { get; init; }
 
     public ushort Items { get; init; }
 
-    public PaginationBySequence(uint minId, ushort items)
+    public PaginationBySequence(ulong minId, ushort items)
     {
         this.MinId = minId;
         this.Items = items;

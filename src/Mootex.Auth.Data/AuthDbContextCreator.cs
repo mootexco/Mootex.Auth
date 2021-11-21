@@ -3,11 +3,11 @@ using Mootex.Auth.Models.Apps;
 
 namespace Mootex.Auth.Data;
 
-public class AppDbContextCreator : AppDbContext
+public class AuthDbContextCreator : AuthDbContext
 {
     private readonly string dsn;
 
-    public AppDbContextCreator(string dsn) : base(new DbContextOptions<AppDbContext>())
+    public AuthDbContextCreator(string dsn) : base(new DbContextOptions<AuthDbContext>())
     {
         this.dsn = dsn;
     }
@@ -35,6 +35,6 @@ public class AppDbContextCreator : AppDbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlite(this.dsn);
+        optionsBuilder.UseNpgsql(this.dsn);
     }
 }

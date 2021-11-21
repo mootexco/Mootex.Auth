@@ -6,9 +6,9 @@ namespace Mootex.Auth.Data.Apps;
 
 public sealed class EfAppRepository : IAppRepository
 {
-    private readonly AppDbContext db;
+    private readonly AuthDbContext db;
 
-    public EfAppRepository(AppDbContext db)
+    public EfAppRepository(AuthDbContext db)
     {
         this.db = db ?? throw new ArgumentNullException(nameof(db));
     }

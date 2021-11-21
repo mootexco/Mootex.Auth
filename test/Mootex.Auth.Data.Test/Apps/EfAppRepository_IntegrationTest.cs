@@ -13,9 +13,9 @@ public sealed class EfAppRepository_IntegrationTest
 
     public EfAppRepository_IntegrationTest()
     {
-        var dsn = "Data Source=../../Mootex.Auth.db";
+        var dsn = "Host=127.0.0.1;Database=mootexauth;Username=postgres;Password=postgres";
 
-        var db = new AppDbContextCreator(dsn);
+        var db = new AuthDbContextCreator(dsn);
         db.Create();
         db.CreateSampleData();
 
@@ -36,7 +36,7 @@ public sealed class EfAppRepository_IntegrationTest
     [Theory]
     [InlineData(0)]
     [InlineData(1)]
-    public async Task GetList_Skips_BasedOnId(uint minId)
+    public async Task GetList_Skips_BasedOnId(ulong minId)
     {
         var actual = this.sut.GetList(new PaginationBySequence(minId, 1));
         var item = await actual.FirstAsync();

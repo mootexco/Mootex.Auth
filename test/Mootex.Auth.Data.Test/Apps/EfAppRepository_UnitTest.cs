@@ -11,7 +11,7 @@ public sealed class EfAppRepository_UnitTest
 
     public EfAppRepository_UnitTest()
     {
-        this.sut = new EfAppRepository(new AppDbContextCreator(string.Empty));
+        this.sut = new EfAppRepository(new AuthDbContextCreator(string.Empty));
     }
 
     [Fact]

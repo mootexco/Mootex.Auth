@@ -1,10 +1,8 @@
 ﻿namespace Mootex.Auth.Models.Apps;
 
-public sealed class AppModel
+public sealed class AppModel : IModelWithNumericId
 {
-    public uint Id { get; init; }
+    public ulong Id { get; set; }
 
-    public string Name { get; init; } = string.Empty;
-
-    public DateTime UpdateTime { get; init; }
+    public string Name { get; set; } = string.Empty;
 }

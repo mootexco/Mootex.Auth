@@ -8,14 +8,14 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddOpenApi();
 
-var dsn = "Data Source=../../Mootex.Auth.db";
-builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlite(dsn));
+var dsn = "Host=127.0.0.1;Database=mootexauth;Username=postgres;Password=postgres";
+builder.Services.AddDbContext<AuthDbContext>(opt => opt.UseNpgsql(dsn));
 
 builder.Services.AddTransient(
     typeof(Mootex.Auth.Models.Apps.IAppRepository),
     typeof(Mootex.Auth.Data.Apps.EfAppRepository));
 
-var db = new AppDbContextCreator(dsn);
+var db = new AuthDbContextCreator(dsn);
 db.Create();
 db.CreateSampleData();
 
